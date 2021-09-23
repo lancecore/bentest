@@ -1,0 +1,21 @@
+td {
+	padding: .5rem 1rem;
+}
+
+.meeting-booked {
+	background-color: purple;
+	color: white;
+	font-weight: bold;
+}
+
+.waiting-for-proposal {
+	background-color: orange;
+	color: white;
+	font-weight: bold;
+}
+
+.new-lead {
+	background-color: green;
+	color: white;
+	font-weight: bold;
+}
