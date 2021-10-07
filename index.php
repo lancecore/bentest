@@ -5,7 +5,7 @@
   <div class="starter-template py-5 px-3">
     <h1>Leads</h1>
     
-    <table>
+    <table class="sortable">
       <thead>
         <tr>
           <td>Lead Status</td>
@@ -36,7 +36,7 @@
               </td>
             <td><?php if ( get_field('client_name') ) : the_field('client_name'); endif; ?></td>
             <td><?php if ( get_field('meeting_time') ) : the_field('meeting_time'); endif; ?></td>
-            <td><a href="<?php the_permalink(); ?>">View this one</a></td>
+            <td><a href="<?php echo bloginfo('url'); ?>/wp-admin/post.php?post=<?php echo $post->ID; ?>&action=edit">Edit this one</a></td>
             <td><?php if ( get_field(assigned) ) : foreach ( get_field(assigned) as $assigned ) : 
                 echo $assigned[display_name] . '<br>';
               endforeach; endif; ?></td>
